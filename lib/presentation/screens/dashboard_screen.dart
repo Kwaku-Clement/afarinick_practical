@@ -1,4 +1,5 @@
-import 'package:afarinick_test/presentation/widgets/dashboard_cards.dart';
+import 'package:afarinick_test/presentation/widgets/monitoring_card.dart';
+import 'package:afarinick_test/presentation/widgets/register_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
