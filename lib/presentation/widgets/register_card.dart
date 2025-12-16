@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:afarinick_test/presentation/widgets/inner_shadow_container.dart';
 
 class RegisterCard extends StatelessWidget {
   final String title;
@@ -20,19 +21,34 @@ class RegisterCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return InnerShadowContainer(
       margin: const EdgeInsets.only(bottom: 16),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withValues(alpha: 0.05),
-            blurRadius: 10,
-            offset: const Offset(0, 4),
+            offset: const Offset(3.62, 4.76),
+            blurRadius: 21.86,
+            spreadRadius: 2.29,
+            color: const Color(0xFF3754AA).withValues(alpha: 0.1),
+          ),
+          BoxShadow(
+            offset: const Offset(-8.2, -8.2),
+            blurRadius: 0,
+            spreadRadius: -13.74,
+            color: const Color(0xFFFFFFFF),
           ),
         ],
       ),
+      innerShadows: [
+        BoxShadow(
+          offset: const Offset(1.09, 1.09),
+          blurRadius: 5.72,
+          spreadRadius: 12.59,
+          color: const Color(0xFFFFFFFF).withValues(alpha: 0.5),
+        ),
+      ],
       child: Stack(
         children: [
           Padding(
