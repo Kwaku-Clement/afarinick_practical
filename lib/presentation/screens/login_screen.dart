@@ -114,7 +114,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           onPressed: _onLogin,
                         ),
                       ),
-                      const SizedBox(height: 140),
+                      const SizedBox(height: 110),
                       CreateAccountFooter(
                         onTapCreate: _onCreateAccount,
                         primary: primary,
